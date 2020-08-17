@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 
 import core.PageObject;
 
-public class AdicionarUsuarioPage extends PageObject {
+public class CadastrarUsuarioPage extends PageObject {
 
 	public void setNome(String nome) {
 		enterTextField(By.xpath("//input[@name='nome']"), nome);
