@@ -4,7 +4,7 @@ public class Properties {
 	
 	public static String CONF_DIR = "C:\\home\\avalie\\repos\\Avalie\\conf\\grid\\";
 	
-	public static String BASE_URL = "http://127.0.0.1:8000/admin";
+	public static String BASE_URL = "http://127.0.0.1:8000";
 	
 	public static String USER_EMAIL = "henriques@gmail.com";
 	public static String USER_PASSWORD = "123321";

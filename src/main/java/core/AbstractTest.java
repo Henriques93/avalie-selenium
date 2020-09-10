@@ -73,8 +73,7 @@ public class AbstractTest {
 		}
 		driver = core.DriverFactory.getDriver();
 		driver.get(Properties.BASE_URL);
-		LoginPage loginPage = new LoginPage();
-		loginPage.loginCompleto(Properties.USER_EMAIL, Properties.USER_PASSWORD);
+		
 	
 	}
 
