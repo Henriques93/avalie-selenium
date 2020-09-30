@@ -44,4 +44,8 @@ public class DashBoardCoordenadorPage extends PageObject {
 		clickButton(By.xpath("//p[contains(text(),'Comparar Avaliações')]"));
 	}
 	
+	public boolean verificarLoginSucesso() {
+		return isMessagePresent("Seja bem vindo");
+	}
+	
 }

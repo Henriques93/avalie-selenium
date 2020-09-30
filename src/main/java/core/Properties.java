@@ -6,8 +6,10 @@ public class Properties {
 	
 	public static String BASE_URL = "http://127.0.0.1:8000";
 	
-	public static String USER_EMAIL = "henriques@gmail.com";
-	public static String USER_PASSWORD = "123321";
+	public static String COORDENADOR_EMAIL = "henriques@gmail.com";
+	public static String COORDENADOR_PASSWORD = "123321";
+	public static String PROFESSOR_EMAIL = "henriques@gmail.com";
+	public static String PROFESSOR_PASSWORD = "123321";
 	public static String GRID_URL = "http://localhost:4444/wd/hub";
 			
 	public static int WAIT_TIME = 10;
@@ -25,11 +27,11 @@ public class Properties {
 		}
 		String _userName = System.getProperty("userName");
 		if (_userName != null && !_userName.isEmpty()) {
-			USER_EMAIL = _userName;
+			COORDENADOR_EMAIL = _userName;
 		}
 		String _userPassword = System.getProperty("userPassword");
 		if (_userPassword != null && !_userPassword.isEmpty()) {
-			USER_PASSWORD = _userPassword;
+			COORDENADOR_PASSWORD = _userPassword;
 		}
 	}
 	

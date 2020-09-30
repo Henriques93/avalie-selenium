@@ -19,13 +19,13 @@ public class CadastrarUsuarioPage extends PageObject {
 	}
 	
 	public void selectTipoUsuarioProfessor() {
-		clickButton(By.xpath("//span[@class='select2-selection__arrow']"));
-		clickButton(By.xpath("//li[@id='select2-tipoUsuario-yr-result-znlj-P']"));
+		clickButton(By.xpath("//span[@class='selection']/span"));
+		clickButton(By.xpath("//li[contains(text(),'Professor')]"));
 	}
 	
 	public void selectTipoUsuarioCoordenador() {
-		clickButton(By.xpath("//span[@class='select2-selection__arrow']"));
-		clickButton(By.xpath("//li[@id='select2-tipoUsuario-yr-result-2l9j-C']"));
+		clickButton(By.xpath("//span[@class='selection']/span"));
+		clickButton(By.xpath("//li[contains(text(),'Coordenador')]"));
 	}
 	
 	public void clicarCadastrarUsuario() {

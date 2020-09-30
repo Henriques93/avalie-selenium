@@ -61,11 +61,11 @@ public class AbstractTest {
 		}
 		String userName = System.getProperty("userName");
 		if (userName != null && !userName.isEmpty()) {
-			Properties.USER_EMAIL = userName;
+			Properties.COORDENADOR_EMAIL = userName;
 		}
 		String userPassword = System.getProperty("userPassword");
 		if (userPassword != null && !userPassword.isEmpty()) {
-			Properties.USER_PASSWORD = userPassword;
+			Properties.COORDENADOR_PASSWORD = userPassword;
 		}
 		String gridUrl = System.getProperty("gridUrl");
 		if (gridUrl != null && !gridUrl.isEmpty()) {

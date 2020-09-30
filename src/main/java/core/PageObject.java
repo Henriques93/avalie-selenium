@@ -213,7 +213,7 @@ public class PageObject {
 		String numeroProcediemnto = "";
 		do{
 			wait(1);
-			List<WebElement> linhas = tabela.findElements(By.xpath("/tbody/tr/td["+idColuna+"]"));
+			List<WebElement> linhas = tabela.findElements(By.xpath("./tbody/tr/td["+idColuna+"]"));
 			for(int i = 0; i < linhas.size(); i++) {
 				if(linhas.get(i).getText().equals(valor)) {
 					idLinha = i + 1;
