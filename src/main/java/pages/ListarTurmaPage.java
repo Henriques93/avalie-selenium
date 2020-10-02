@@ -17,11 +17,12 @@ public class ListarTurmaPage extends PageObject{
 	
 	public void editarTurma(String colunaBusca, String valor) {
 		WebElement celula = clicarBotaoTabela(colunaBusca, valor, "Ações", "//table[@id='table']");
-		celula.findElement(By.xpath(".//a[1]"));
+		celula.findElement(By.xpath(".//a[1]")).click();
 	}
 
 	public void deletarTurma(String colunaBusca, String valor) {
 		WebElement celula = clicarBotaoTabela(colunaBusca, valor, "Ações", "//table[@id='table']");
-		celula.findElement(By.xpath(".//a[2]"));
+		celula.findElement(By.xpath(".//a[2]")).click();
+		clickConfirmDialog();
 	}
 }

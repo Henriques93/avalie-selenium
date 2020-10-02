@@ -1,5 +1,6 @@
 package pages;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
@@ -17,12 +18,13 @@ public class ListarCursoPage extends PageObject{
 	
 	public void editarCurso(String colunaBusca, String valor) {
 		WebElement celula = clicarBotaoTabela(colunaBusca, valor, "Ações", "//table[@id='table']");
-		celula.findElement(By.xpath(".//a[1]"));
+		celula.findElement(By.xpath(".//a[1]")).click();
 	}
 
 	public void deletarCurso(String colunaBusca, String valor) {
 		WebElement celula = clicarBotaoTabela(colunaBusca, valor, "Ações", "//table[@id='table']");
-		celula.findElement(By.xpath(".//a[2]"));
+		celula.findElement(By.xpath(".//a[2]")).click();
+		clickConfirmDialog();
 	}
 	
 }

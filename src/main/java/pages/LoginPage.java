@@ -31,7 +31,7 @@ public class LoginPage extends PageObject {
 	}
 	
 	public boolean verificarMensagemErro() {
-		return isMessagePresent("Os dados informados não conferem");
+		return isMessagePresent("Erro!");
 	}
 
 	public void loginCompleto(String login, String senha) {

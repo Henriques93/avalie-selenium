@@ -2,6 +2,8 @@ package core;
 
 import java.io.IOException;
 import static core.DriverFactory.killDriver;
+
+import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.Rule;
@@ -23,7 +25,7 @@ public class AbstractTest {
 	public TestRule screenshotOnFailure = new ScreenshotOnFailure(this);
   
 	private WebDriver driver;
-  
+   
 	@Before
 	public void start() {
 		String platform = System.getProperty("platform");
@@ -77,8 +79,8 @@ public class AbstractTest {
 	
 	}
 
-  @AfterClass
-	public static void finish() throws IOException{
+	@After
+	public void finish() throws IOException{
 		if(Properties.CLOSE_BROWSER) {
 			killDriver();
 		}

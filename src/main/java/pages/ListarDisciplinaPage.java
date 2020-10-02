@@ -17,11 +17,12 @@ public class ListarDisciplinaPage extends PageObject {
 	
 	public void editarDisciplina(String colunaBusca, String valor) {
 		WebElement celula = clicarBotaoTabela(colunaBusca, valor, "Ações", "//table[@id='table']");
-		celula.findElement(By.xpath(".//a[1]"));
+		celula.findElement(By.xpath(".//a[1]")).click();
 	}
 
 	public void deletarDisciplina(String colunaBusca, String valor) {
 		WebElement celula = clicarBotaoTabela(colunaBusca, valor, "Ações", "//table[@id='table']");
-		celula.findElement(By.xpath(".//a[2]"));
+		celula.findElement(By.xpath(".//a[2]")).click();
+		clickConfirmDialog();
 	}
 }

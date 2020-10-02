@@ -13,7 +13,7 @@ public class Properties {
 	public static String GRID_URL = "http://localhost:4444/wd/hub";
 			
 	public static int WAIT_TIME = 10;
-	public static boolean CLOSE_BROWSER = false;
+	public static boolean CLOSE_BROWSER = true;
 	
 //public static Browsers BROWSER = Browsers.FIREFOX;
 	public static Browsers BROWSER = Browsers.FIREFOX;
