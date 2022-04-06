@@ -1,10 +1,10 @@
 package core;
 
-import java.io.IOException;
 import static core.DriverFactory.killDriver;
 
+import java.io.IOException;
+
 import org.junit.After;
-import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.rules.TestName;
@@ -14,7 +14,6 @@ import org.openqa.selenium.WebDriver;
 import core.Properties.Browsers;
 import core.Properties.ExecutionTypes;
 import core.Properties.Platforms;
-import pages.LoginPage;
 
 public class AbstractTest {
 
