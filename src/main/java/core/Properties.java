@@ -1,8 +1,7 @@
 package core;
 
 public class Properties {
-	
-	public static String CONF_DIR = "C:\\home\\avalie\\repos\\Avalie\\conf\\grid\\";
+	public static String CONF_DIR = "C:\\Users\\fhenriquesg\\Documents\\TCC\\repos\\avalie-selenium\\conf\\grid\\";
 	
 	public static String BASE_URL = "http://avalie.herokuapp.com/";
 	
